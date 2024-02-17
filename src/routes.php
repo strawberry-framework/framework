@@ -3,7 +3,7 @@
 $routes = [
 
     '/' => [HelloController::class, 'world'],
-    '/hidden' => [HiddenController::class, 'index', [AuthorizationMiddleware::class]],
+    '/hidden' => [HiddenController::class, 'index', [AuthMiddleware::class]],
 
     '/about' => function () {
         echo 'About page!';
