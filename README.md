@@ -1,16 +1,25 @@
-## 🍓 What is Strawberry?
-Strawberry is a lightweight approach to make working with PHP less of a pain in the ass.
-## ⚙️ Setup
-### Requirements
+![259536673-e241b819-1178-48c0-945e-94b1e755b689](https://github.com/strberry/framework/assets/129489839/3fbf51c0-12af-455c-9f60-d3ce56e8587f)
+<div align="center">
+	<i>Strawberry is a lightweight approach to make working with PHP less of a pain in the ass.</i>
+</div>
+
+## 🚀 Quick Setup
+### ✅ Requirements
 - Written for PHP 8 (older versions are untested)
 - Apache web server allowing .htaccess files
-### Installation
+### ⚙️ Installation
 ```bash
-$ git clone https://github.com/strberry/framework.git
+git clone https://github.com/strberry/framework.git
 ```
-## 🚀 Getting Started
-### Creating your first controller
-#### **`src/controllers/HelloWorldController.php`**
+### 🚀 Deployment
+```bash
+docker compose up -d
+```
+If you do not want to use docker, move the `src/` directory to your web server's root
+
+### 👨‍💻 Getting Started
+#### Creating your first controller
+##### **`src/controllers/HelloWorldController.php`**
 ```php
 <?php
 
@@ -24,8 +33,8 @@ class HelloController extends Controller
 
 }
 ```
-### Mapping a route to a controller
-##### **`src/routes.php`**
+#### Mapping a route to a controller
+###### **`src/routes.php`**
 ```php
 <?php
 
@@ -38,7 +47,7 @@ $routes = [
 ];
 
 ```
-### Testing
+#### Testing
 ```
 user@box:/var/www/html$ curl http://localhost/
 Hello World!
